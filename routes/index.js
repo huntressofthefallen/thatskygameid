@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index');
+  res.redirect('https://www.thatskygame.com/');
 });
 
 router.get('/SoAbyssConceptArt', (req, res, next) => {
@@ -11,7 +11,7 @@ router.get('/SoAbyssConceptArt', (req, res, next) => {
 });
 
 router.get('/DoNCrafting', (req, res, next) => {
-  res.render('DoNCraftingID');
+  res.redirect('https://www.thatskygame.com/news/crafting-memorable-days-of-nature-encounters');
 });
 
 module.exports = router;
