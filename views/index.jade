@@ -12,6 +12,10 @@ head
       background-position: center; /* Center the image */
       background-size: cover; /* Resize the background image to cover the entire container */
     }
+    footer {
+      background-color: rgba(255,255,255,0.25);
+      padding: 5px;
+    }
     .container {
       width: 100%;
       padding-right: 15px;
@@ -54,31 +58,40 @@ head
 body
   .container
     .image-container
-      img.w3-margin(src='https://cdn.discordapp.com/attachments/842310865704583188/976302508324552754/278322985_756405632009622_6702498855625597015_n.jpg' alt='Season of Performance' max-width='100%' height='150px' style='border-radius: 50%; alt=')
+      a(href='https://thatskygame.com' target='_blank') <img class='w3-margin' src='/images/AP14Profile.jpg' alt='Season of Performance' max-width='100%' height='150px' style='border-radius: 50%;'>
       div.w3-round-large(style='background-color:rgba(0,0,0,0.5)')
         p.w3-xlarge.w3-text-white <br> Selamat Datang di <a href='https://thatskygame.com' target='_blank'><img src='/images/sky-logo-white.png' height='50px'></a>
         p.w3-large.w3-text-white
-          strong Sebuah petualangan sosial yang menyatukan orang-orang terkasih.
-        p.w3-medium.w3-text-white Sky adalah game iPhone terbaik tahun ini dan game multi-format, multipemain terbaru dari <a href="https://thatgamecompany.com/" target="_blank">thatgamecompany</a>. Tersedia di <a href="https://apps.apple.com/app/id1462117269" target="_blank">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.tgc.sky.android" target="_blank">Google Play</a>, dan <a href="https://www.nintendo.com/store/products/sky-children-of-the-light-switch/" target="_blank">Nintendo Switch</a>, dengan format lain menyusul. 
+          strong
+            i
+              q Sebuah petualangan sosial yang menyatukan orang-orang terkasih.
+        p.w3-small.w3-text-white Sky adalah game iPhone terbaik tahun ini dan game multi-format, multipemain terbaru dari <a href="https://thatgamecompany.com/" style="text-decoration:none" target="_blank">thatgamecompany</a>.<br>Tersedia di <a href="https://apps.apple.com/app/id1462117269" target="_blank">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.tgc.sky.android" target="_blank">Google Play</a>, dan <a href="https://www.nintendo.com/store/products/sky-children-of-the-light-switch/" target="_blank">Nintendo Switch</a>, dengan format lain menyusul.
+        p.w3-large.w3-text-white Bergabunglah dengan kami dalam komunitas resmi Sky: Children of the Light Indonesia.
         br
       .links-container
-        a.w3-button.w3-hover-blue.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://www.facebook.com/skychildrenofthelightID' target='_blank')
+        br
+        a.w3-button.w3-hover-red.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://www.facebook.com/skychildrenofthelightID' target='_blank')
           i.fab.fa-facebook &nbsp;
           | Facebook
         br
-        a.w3-button.w3-hover-blue.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://www.instagram.com/thatskygameid/' target='_blank')
+        a.w3-button.w3-hover-red.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://www.instagram.com/thatskygameid/' target='_blank')
           i.fab.fa-instagram &nbsp;
           | Instagram
         br
-        a.w3-button.w3-hover-blue.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://www.tiktok.com/@thatskygameid' target='_blank')
+        a.w3-button.w3-hover-red.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://www.tiktok.com/@thatskygameid' target='_blank')
           i.fab.fa-tiktok &nbsp;
           | TikTok
         br
-        a.w3-button.w3-hover-blue.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://discord.gg/thatskygame' target='_blank')
-          i.fab.fa-discord &nbsp;
-          | Discord
-        br
-        a.w3-button.w3-hover-blue.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://www.thatskygame.com/' target='_blank')
-          i.fas.fa-window-maximize &nbsp;
-          | Blog
-        br
+        //- a.w3-button.w3-hover-red.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://discord.gg/thatskygame' target='_blank')
+        //-   i.fab.fa-discord &nbsp;
+        //-   | Discord
+        //- br
+        //- a.w3-button.w3-hover-red.w3-large.w3-round-xxlarge.w3-white.w3-border.link(style='transition: background .5s ease-in-out, color .5s ease-in-out' href='https://www.thatskygame.com/' target='_blank')
+        //-   i.fas.fa-window-maximize &nbsp;
+        //-   | Website
+        //- br
+footer
+  .container 
+    .image-container
+      a(href="https://thatgamecompany.com/" target="_blank") <img class="w3-margin" src='/images/thatgamecompanylogo.png' alt='thatgamecompany' max-width='100%' >
+      p © 2022 thatgamecompany, Inc. All Rights Reserved.
